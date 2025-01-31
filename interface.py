@@ -66,7 +66,7 @@ if uploaded_image is not None:
 
     # Load Model
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = load_model("interface stremlit\\best_tversky_model.pth", device)
+    model = load_model("best_tversky_model.pth", device)
 
     # Process Image
     model_input = process_image(image_np)
